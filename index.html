@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>OneClick</title>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      h1 {
+        font-size: 80px;
+      }
+    </style>
+    <script src="script.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.9.179/pdf.min.js"></script>
+  </head>
+  <body>
+    <h1>OneClick!</h1>
+    <p>
+      The easiest way to upload, store and fill-up any important document just
+      in "One click"!
+    </p>
+    <br />
+    <form action="/action.php">
+      Upload your file: <input type="file" id="myFile" name="filename" />
+
+      <br />
+      <br />
+      Search: <input type="text" placeholder="Type here" />
+    </form>
+    <br />
+    <button type="button" onclick="convertToText()">Convert</button>
+    <pre id="output"></pre>
+  </body>
+</html>
